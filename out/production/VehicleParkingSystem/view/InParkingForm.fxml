@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="inParkingContext" prefHeight="700.0" prefWidth="1300.0" style="-fx-background-color: #fbdda0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InParkingFormController">
+   <children>
+      <JFXComboBox fx:id="cmbOption" focusColor="BLACK" layoutX="50.0" layoutY="61.0" prefHeight="40.0" prefWidth="236.0" />
+      <JFXButton buttonType="RAISED" layoutX="712.0" layoutY="53.0" onAction="#openAddDriverOnAction" prefHeight="70.0" prefWidth="270.0" style="-fx-background-color: #f4ad39; -fx-background-radius: 20;" text="Add Driver">
+         <font>
+            <Font name="Leelawadee UI" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="420.0" layoutY="53.0" onAction="#openAddVehicleOnAction" prefHeight="70.0" prefWidth="270.0" style="-fx-background-color: #f4ad39; -fx-background-radius: 20;" text="Add Vehicle">
+         <font>
+            <Font name="Leelawadee UI" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1060.0" layoutY="53.0" onAction="#backToStartOnAction" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #f8c567; -fx-background-radius: 20;" text="LogOut">
+         <font>
+            <Font name="Leelawadee UI" size="30.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblParkIn" layoutX="53.0" layoutY="193.0" prefHeight="450.0" prefWidth="1190.0" style="-fx-background-color: #fff0d6;">
+        <columns>
+          <TableColumn fx:id="colVehicleNumber" prefWidth="314.0000305175781" text="Vehicle Number" />
+          <TableColumn fx:id="colVehicleType" prefWidth="307.0" text="Vehicle Type" />
+            <TableColumn fx:id="colParkingSlot" prefWidth="210.0" text="Parking Slot" />
+            <TableColumn fx:id="colParkedTime" prefWidth="360.0" text="Parked Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="606.0" prefWidth="941.0" style="-fx-background-color: #f4ddaf;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDriverFormController">
+   <children>
+      <Label layoutX="134.0" layoutY="55.0" text="Driver Name :">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="244.0" layoutY="130.0" text="NIC :">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="212.0" text="Driving License No :">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="191.0" layoutY="288.0" text="Address :">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDriverName" focusColor="BLACK" layoutX="310.0" layoutY="39.0" prefHeight="65.0" prefWidth="500.0">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtNIC" focusColor="BLACK" layoutX="310.0" layoutY="116.0" prefHeight="65.0" prefWidth="500.0" promptText="xxxxxxxxxxV">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDrivingLicenseNo" focusColor="BLACK" layoutX="310.0" layoutY="200.0" prefHeight="65.0" prefWidth="500.0" promptText="Bxxxxxxx">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="653.0" layoutY="501.0" onAction="#addDriverOnAction" prefHeight="70.0" prefWidth="237.0" style="-fx-background-color: #f8b75d; -fx-background-radius: 20;" text="Add Driver">
+         <font>
+            <Font name="Leelawadee UI" size="30.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="155.0" layoutY="426.0" text="Contact no :">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txtAddress" focusColor="BLACK" layoutX="310.0" layoutY="278.0" prefHeight="120.0" prefWidth="500.0">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextField fx:id="txtContactNo" focusColor="BLACK" layoutX="310.0" layoutY="411.0" prefHeight="65.0" prefWidth="500.0" promptText="0xxxxxxxxx">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>
